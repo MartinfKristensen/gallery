@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #663399;
+}
+
+.hero {
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  font-size: 2rem;
+  background: #663399;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero > a {
+  cursor: pointer;
+  position: absolute;
+  color: #ffffff96;
+  bottom: 20px;
+  right: 20px;
+}
+
+.hero > a:hover {
+  color: #fff;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  height: 100%;
+  background: #663389;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0;
+  height: 350px;
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.01);
+}
+
+.card > img {
+  border-radius: 10px 10px 0 0;
+}
+
+.card > h2 {
+  margin-top: 20px;
+  color: #000;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
+  height: 30px;
+  background: #663399;
+  border-radius: 5px;
+}
+
+.button > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #3a165e;
+}
+
+@media (max-width: 1000px) {
+  .games {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .games {
+    grid-template-columns: 1fr;
+  }
+}
