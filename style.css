@@ -13,15 +13,19 @@ body {
 }
 
 .hero {
-  text-align: center;
+  text-align: Left;
   display: flex;
   height: 100vh;
   font-size: 2rem;
   background: #663399;
   color: #fff;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   position: relative;
+}
+
+.hero h2 {
+  margin-left: 10%;
 }
 
 .hero > a {
@@ -30,6 +34,7 @@ body {
   color: #ffffff96;
   bottom: 20px;
   right: 20px;
+  z-index: 1;
 }
 
 .hero > a:hover {
@@ -110,14 +115,28 @@ body {
   background: #3a165e;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .pictures {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .hero h2 {
+    margin: auto;
+  }
+
+  canvas {
+    display: none !important;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .pictures {
     grid-template-columns: 1fr;
   }
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
