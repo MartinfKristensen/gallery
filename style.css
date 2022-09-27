@@ -122,6 +122,7 @@ body {
 
   .hero h2 {
     margin: auto;
+    text-align: center;
   }
 
   canvas {
@@ -132,6 +133,10 @@ body {
 @media (max-width: 550px) {
   .pictures {
     grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
   }
 }
 
