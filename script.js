@@ -10,13 +10,15 @@ scene.add(camera);
 
 const textureLoader = new THREE.TextureLoader();
 const texture = textureLoader.load(
-  "https://raw.githubusercontent.com/nidorx/matcaps/master/1024/C35C04_F9C30C_EE9F04_E08304.png"
+  "https://raw.githubusercontent.com/nidorx/matcaps/master/1024/736655_D9D8D5_2F281F_B1AEAB.png"
 );
 
-const geometry = new THREE.TorusKnotGeometry(0.6, 0.2, 64, 100);
+const geometry = new THREE.TorusKnotGeometry(0.6, 0.2, 64, 8);
+// const geometry = new THREE.TorusGeometry(1, 0.25, 30, 3);
+// const geometry = new THREE.IcosahedronGeometry(1, 0);
 const material = new THREE.MeshMatcapMaterial({ matcap: texture });
 const mesh = new THREE.Mesh(geometry, material);
-//mesh.rotation.y = 0.5
+// mesh.rotation.y = 0.5;
 scene.add(mesh);
 
 const renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -35,11 +37,11 @@ const tick = () => {
 
   mesh.rotation.y += 0.01;
 
-  const cameraX = cursor.x - 1;
-  const cameraY = -cursor.y;
+  // const cameraX = cursor.x - 1;
+  // const cameraY = -cursor.y;
 
-  camera.position.x += (cameraX - camera.position.x) / 10;
-  camera.position.y += (cameraY - camera.position.y) / 10;
+  // camera.position.x += (cameraX - camera.position.x) / 20;
+  // camera.position.y += (cameraY - camera.position.y) / 20;
 
   renderer.render(scene, camera);
 };

@@ -1,0 +1,20 @@
+body {
+  background: #fff;
+}
+
+.button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#carousel21 {
+  width: 70vw;
+}
+
+.carouselWrap {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
