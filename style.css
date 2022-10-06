@@ -160,3 +160,22 @@ canvas {
   top: 0;
   left: 0;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #734ac7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5a32a8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #56328b;
+}
