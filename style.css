@@ -135,6 +135,10 @@ body {
   canvas {
     display: none !important;
   }
+
+  .year .button {
+    left: 40vw;
+  }
 }
 
 @media (max-width: 550px) {
@@ -144,6 +148,10 @@ body {
 
   .hero h2 {
     font-size: 2rem;
+  }
+
+  .year .button {
+    left: 30vw;
   }
 }
 
